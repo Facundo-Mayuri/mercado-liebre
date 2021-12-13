@@ -1,0 +1,393 @@
+@import url('normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: #ebebeb;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 19px;
+}
+
+.main-header {
+        background-color: #EAC926;
+        padding: 5px
+}
+
+.main-body {
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+
+.burger-menu {
+    background-color: #1259c3;
+    color: #ffffff;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.caja {
+    position: relative;
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    border-top: solid 2px #ebebeb;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.article div i {
+
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color: #39b54a;
+    transition: all 300ms
+}
+
+.article:hover div i {
+    transform: rotate(-90deg)
+}
+
+.caja h3{
+    width: 90%;
+    text-transform: lowercase;
+    font-size: 13px;
+    color: #666;
+    text-align: bottom;
+    margin: 0px;
+    display: none;
+    opacity: 0;
+    transition: all 300ms;
+}
+
+.article:hover .caja h3 {
+    opacity: 1;
+}
+
+.list {
+    display: none
+}
+
+.article img{
+    width: 100%
+}
+
+.article {
+    padding: 15px;
+    background-color:white;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    transition: all 300ms
+}
+
+.titulares {
+    font-size: 24px;
+    color: #666;    
+}
+
+.caja h4{
+    font-size: 16px;
+    color: #39b54a;
+    line-height: 0px;
+    display: block;
+    padding-left: 5px;
+    transition: all 300ms;
+}
+
+.caja p {
+    font-size: 16px;
+    text-align: left;
+    display: block;
+    line-height: 0px;    
+}
+
+.foot {    
+    background-color: white;  
+    border: solid 10px #ebebeb;;
+}
+
+.foot div{
+    text-align: center;    
+}
+
+.foot section p {
+    font-size: 10px
+}
+
+.foot h3 {
+    font-size: 16px
+}
+
+.copy {
+    font-size: 13px;
+    text-align: left
+}
+
+.caja-foot{
+    padding: 50px
+}
+
+.list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list a {
+        text-decoration: none;
+        color: #222222;
+        display: inline-block;
+        padding: 5px 0px;
+        font-size: 17px;
+}
+
+.card {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px
+}
+
+.gift{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px
+}
+
+.security{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px
+}
+
+.controlador {
+    margin-bottom: 15px;
+
+}
+
+.controlador label {
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+
+.controlador input {
+    border: solid 1px #ebebeb;
+    border-radius: 10px;
+}
+
+.control {
+    width: 100%;
+    padding: 15px 10px
+}
+
+.boton-formulario, .boton-formulario-login {
+    background-color: #1259c3;
+    align-self: center;
+    border: none;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 15px;
+    transition: all 200ms;
+}
+
+.boton-formulario-login {
+    width: 100%;
+    text-align: center;
+}
+
+.boton-formulario:hover {
+    background-color: #0022AA
+}
+
+.main-login {
+    margin: auto;
+    margin: 150px 0px;
+
+}
+
+.main-login form{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.create-form {
+    padding: 20px 0px
+}
+
+.main-register {
+    width: 90%;
+    margin: auto    
+}
+
+.search {
+    display: flex;
+    width: 40%;
+    background-color: white;
+    border-radius: 8px;
+    margin: 0px;
+    height: 40px
+}
+
+.buscador {
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.search i {
+    margin: auto;
+}
+
+.header-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caja-foot section i:hover {
+    color: #39b54a;
+    transition: all 300ms;
+}
+
+@media (min-width: 361px){
+
+    .header-top img {
+        width: 200px;
+    }
+    
+    .article:hover {        
+        transform: scale(1.10)
+    }
+    .burger-menu{
+        display: none
+    }
+
+    .article {
+        width: 48%
+    }
+
+    .caja h3 {
+        display: flex;
+        flex-grow: 0.30;
+        order: 1
+    }
+
+    .section1, .section2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly
+    }
+
+    .list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .list ul {
+        display: flex
+    }
+
+    .list li {
+        margin: 0px 3px
+    }
+
+    .list li a{
+        font-size: 8px
+    }
+
+    .header-top {
+        justify-content: space-around;
+    }
+    .header-top a {
+        align-self: flex-start;
+    }
+
+}
+
+@media (min-width: 769px){
+    .list li a{
+        font-size: 19px
+    }
+
+    .main-body {
+        max-width: 1500px;
+    }
+
+    .header-top img {
+        width: 350px
+    }
+
+    .main-register {
+        max-width: 700px;
+    }
+
+    .caja-foot {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 22%
+    }
+
+    .header-top {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%
+    }
+    
+    .search {
+        height: 25px;
+        max-width: 400px;
+    }
+
+    .main-header {
+        padding: 20px;
+        flex-wrap: nowrap;
+    }
+}
+
+
+
+
+
+
