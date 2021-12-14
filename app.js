@@ -5,7 +5,11 @@ const app = express()
 
 app.use( express.static (path.resolve(__dirname, 'public')))
 
-app.listen(3050, () => {
+/*app.listen(3050, () => {
+    console.log('Servidor corriendo en el puerto 3050')
+})*/
+
+app.listen(process.env.PORT || 3000, () => {
     console.log('Servidor corriendo en el puerto 3050')
 })
 
@@ -23,4 +27,3 @@ app.get('/register', (req, res) => {
     let htmlPath = path.join(__dirname, 'views/register.html')
     res.sendFile(htmlPath)
 })
-
