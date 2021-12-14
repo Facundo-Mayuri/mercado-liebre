@@ -228,6 +228,10 @@ body {
     background-color: #0022AA
 }
 
+.boton-formulario-login:hover {
+    background-color: #0022AA
+}
+
 .main-login {
     margin: auto;
     margin: 150px 0px;
